@@ -1,27 +1,22 @@
 .footer {
-  width: 480px;
   padding: 60px 0;
   background-color: var(--hero-grey);
   @media screen and (min-width: 768px) {
-    width: 768px;
     padding: 60px 35px;
   }
   @media screen and (min-width: 1200px) {
-    width: 1200px;
     display: flex;
-    align-items: center;
-    justify-content: center;
     justify-content: space-between;
-    padding: 60px 215px;
+    padding: 60px 0;
   }
   &-adres {
     text-align: center;
     @media screen and (min-width: 1200px) {
       display: flex;
+      text-align: start;
     }
   }
   &-address {
-    //width: 231px;
     margin-top: 20px;
     @media screen and (min-width: 768px) {
       width: 232px;
@@ -69,8 +64,6 @@
   &-item {
     display: flex;
     justify-content: center;
-    //justify-content: space-between;
-    // margin-top: 20px;
   }
 }
 
@@ -104,7 +97,6 @@
   font-size: 14px;
   line-height: calc(16 / 14);
   text-transform: uppercase;
-  //margin-top: 12px;
   margin-top: 60px;
   margin-bottom: 20px;
   @media screen and (min-width: 768px) {
@@ -134,17 +126,17 @@
 }
 
 .footer-form {
-  // display: flex;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
   &-icon {
     position: absolute;
     left: 145px;
     top: 10px;
   }
   &-input {
-    // margin-right: 12px;
     padding: 15px;
     width: 450px;
-    //width: 358px;
     height: 50px;
 
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -156,6 +148,9 @@
     letter-spacing: 0.03em;
 
     color: rgba(255, 255, 255, 0.6);
+    @media screen and (min-width: 1200px) {
+      width: 358px;
+    }
   }
   &-btn {
     margin-top: 20px;
@@ -167,7 +162,6 @@
     font-size: 16px;
     line-height: calc(30 / 16);
 
-    //display: block;
     align-items: center;
     background: #2196f3;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -177,6 +171,10 @@
     letter-spacing: 0.06em;
 
     color: var(--white);
+    @media screen and (min-width: 1200px) {
+      margin-top: 0;
+      margin-left: 12px;
+    }
   }
 }
 .footer-form-column-right {
@@ -186,9 +184,12 @@
     text-align: center;
     margin-top: 60px;
     margin-left: 98px;
+    @media screen and (min-width: 1200px) {
+      margin-top: 0;
+      text-align: start;
+      width: 570px;
+      height: 86px;
+      margin-left: 92px;
+    }
   }
-  //text-align: center;
-  //width: 570px;
-  //height: 87px;
-  // margin-left: 93px;
 }

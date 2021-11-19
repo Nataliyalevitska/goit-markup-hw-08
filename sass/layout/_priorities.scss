@@ -13,21 +13,22 @@
 .priorities:not(:last-child) {
   margin-bottom: 30px;
   @media screen and (min-width: 1200px) {
-    margin-right: 30px;
+    margin-bottom: 0;
+  }
+}
+.priorities:nth-last-child(-n + 2) {
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
   }
 }
 
 .priorities {
   width: 450px;
-  height: 226px;
   @media screen and (min-width: 768px) {
     width: 354px;
-    height: 251px;
-    margin-bottom: 30px;
   }
   @media screen and (min-width: 1200px) {
     width: 270px;
-    height: 251px;
   }
 }
 .priorities__image {
@@ -40,12 +41,6 @@
   align-items: center;
   justify-content: center;
   margin-bottom: 30px;
-  //@media screen and (min-width: 768px) {
-  // width: 354px;
-  //}
-  //@media screen and (min-width: 1200px) {
-  //width: 270px;
-  //}
 }
 
 .priorities__title {
