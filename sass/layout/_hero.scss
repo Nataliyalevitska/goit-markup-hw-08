@@ -1,6 +1,5 @@
 .hero {
   min-height: 400px;
-  max-width: 480px;
   text-align: center;
   padding: 118px 0;
   background-color: var(--hero-grey);
@@ -12,20 +11,57 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url("../images/hero-title\ \(1\).jpg");
+    url("../images/responsive/header-mob-1x.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  @media screen and (min-width: 768px) {
-    //max-width: 768px;
-    min-height: 400px;
-    max-width: 768px;
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/responsive/header-mob-2x.jpg");
   }
+
+  @media screen and (min-width: 768px) {
+    min-height: 400px;
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/responsive/header-tab-1x.jpg");
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url("../images/responsive/header-tab-2x.jpg");
+    }
+  }
+
   @media screen and (min-width: 1200px) {
-    // max-width: 1200px;
     min-height: 600px;
     max-width: 1600px;
     padding: 200px 0;
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/header-desk-1x.jpg");
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url("../images/header-desk-2x.jpg");
+    }
   }
 
   &__title {
@@ -38,7 +74,6 @@
     color: #ffffff;
     margin-bottom: 30px;
     @media screen and (min-width: 1200px) {
-      // max-width: 1200px;
       font-size: 44px;
       line-height: calc(60 / 44);
     }

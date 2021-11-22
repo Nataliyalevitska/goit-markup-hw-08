@@ -1,10 +1,18 @@
 .button-portfolio {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-wrap: wrap;
+  @media screen and (min-width: 1200px) {
+    justify-content: center;
+    align-items: center;
+  }
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+    align-items: center;
+  }
 }
 .button {
-  margin-bottom: 50px;
+  margin-bottom: 40px;
+
   padding: 6px 22px;
   margin-left: 8px;
 
@@ -27,5 +35,8 @@
   }
   &:last-child {
     margin-right: 0;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
   }
 }
