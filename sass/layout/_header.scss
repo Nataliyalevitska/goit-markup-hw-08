@@ -156,3 +156,125 @@
     line-height: calc(16 / 14);
   }
 }
+.header__icon--menu {
+  &:hover,
+  &:focus {
+    fill: var(--blue);
+  }
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+  @media screen and (min-width: 1200px) {
+    display: none;
+  }
+}
+.header__btn {
+  display: flex;
+  margin-left: 270px;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  width: 50px;
+  padding: 5px;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+  @media screen and (min-width: 1200px) {
+    display: none;
+  }
+}
+.header__close--mob {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 1px;
+  position: absolute;
+  top: 15px;
+  right: 21px;
+  &:hover,
+  &:focus {
+    fill: var(--blue);
+  }
+}
+.mob__menu {
+  position: absolute;
+  background-color: var(--white);
+  right: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 48px 83px 48px 40px;
+  overflow: scroll;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+  @media screen and (min-width: 1200px) {
+    display: none;
+  }
+}
+.mob__menu--link {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: calc(47 / 40);
+  letter-spacing: 0.02em;
+  padding: 10px 0;
+  display: block;
+  margin-bottom: 21px;
+}
+.mob__menu--list {
+  margin-bottom: 302px;
+}
+.mob__menu--tel {
+  font-weight: 500;
+  font-size: 34px;
+  line-height: calc(40 / 34);
+  letter-spacing: 0.02em;
+  display: block;
+  margin-bottom: 30px;
+
+  color: var(--grey);
+  &:hover,
+  &:focus {
+    color: var(--blue);
+  }
+}
+.mob__menu--mail {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.02em;
+  display: block;
+  margin-bottom: 82px;
+
+  color: var(--grey);
+  &:hover,
+  &:focus {
+    color: var(--blue);
+  }
+}
+.mob__menu--socialnetwork {
+  display: flex;
+  justify-content: space-between;
+}
+.mob__menu--social {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: calc(22 / 18);
+
+  letter-spacing: 0.02em;
+  color: rgba(33, 150, 243, 1);
+  padding: 15px 0;
+  &:hover,
+  &:focus {
+    color: var(--blue);
+  }
+}
+.mob__menu--after::after {
+  content: "";
+  position: absolute;
+  width: 22px;
+  height: 0;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  transform: rotate(90deg);
+  bottom: 65px;
+}

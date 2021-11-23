@@ -4,8 +4,10 @@
   left: 50%;
   padding: 40px;
   transform: translate(-50%, -50%);
-  width: 530px;
-  min-height: 580px;
+  width: 450px;
+  height: 609px;
+  //width: 530px;
+  //min-height: 580px;
   border-radius: 4px;
   background-color: var(--white);
   &-title {
@@ -15,6 +17,10 @@
     text-align: center;
     letter-spacing: 0.03em;
     margin-bottom: 30px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 530px;
+    min-height: 580px;
   }
 }
 
