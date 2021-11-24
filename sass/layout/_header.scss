@@ -220,6 +220,9 @@
   padding: 10px 0;
   display: block;
   margin-bottom: 21px;
+  &.nave {
+    color: var(--blue);
+  }
 }
 .mob__menu--list {
   margin-bottom: 302px;

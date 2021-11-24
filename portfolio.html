@@ -30,6 +30,11 @@
           <a class="header__logo" href="./index.html"
             ><span class="header__logo--span">Web</span>Studio</a
           >
+          <button data-menu-open class="header__btn" type="button">
+            <svg class="header__icon--menu" width="40px" height="40px">
+              <use href="./images/symbol-defs.svg#menu-mob"></use>
+            </svg>
+          </button>
           <ul class="header__list--nave header__list--nave--none">
             <li class="header__item">
               <a class="link header__nave" href="./index.html">Студия</a>
@@ -64,6 +69,61 @@
             >
           </li>
         </ul>
+      </div>
+
+      <div class="backdrop is-hidden" data-menu>
+        <div class="mob__menu">
+          <button data-menu-close class="header__close--mob" type="button">
+            <svg class="" width="40px" height="40px">
+              <use href="./images/symbol-defs.svg#close-mob"></use>
+            </svg>
+          </button>
+          <ul class="mob__menu--list">
+            <li>
+              <a class="link mob__menu--link" href="./index.html">Студия</a>
+            </li>
+            <li>
+              <a class="link mob__menu--link nave" href="./portfolio.html"
+                >Портфолио</a
+              >
+            </li>
+            <li>
+              <a class="link mob__menu--link" href="">Контакты</a>
+            </li>
+          </ul>
+          <ul class="mob__menu--connect">
+            <li>
+              <a class="mob__menu--tel" href="tel:+380991111111"
+                >+38 096 111 11 11</a
+              >
+            </li>
+            <li>
+              <a class="mob__menu--mail" href="mailto:info@devstudio"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+          <ul class="mob__menu--socialnetwork">
+            <li class="">
+              <a class="link mob__menu--social mob__menu--after" href=""
+                >Instagram
+              </a>
+            </li>
+            <li class="">
+              <a class="link mob__menu--social mob__menu--after" href="">
+                Twitter
+              </a>
+            </li>
+            <li class="">
+              <a class="link mob__menu--social mob__menu--after" href=""
+                >Facebook</a
+              >
+            </li>
+            <li class="">
+              <a class="link mob__menu--social" href="">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
 
@@ -536,5 +596,7 @@
         </div>
       </div>
     </footer>
+    <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

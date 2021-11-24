@@ -174,12 +174,19 @@ body {
 }
 
 .modal-title {
+  font-weight: bold;
   font-size: 20px;
-  font-weight: 700px;
-  line-height: calc(23 / 20);
+  line-height: calc(30 / 20);
   text-align: center;
   letter-spacing: 0.03em;
-  margin-bottom: 30px;
+  margin-bottom: 12px;
+}
+
+@media screen and (min-width: 1200px) {
+  .modal-title {
+    font-size: 20px;
+    line-height: calc(23 / 20);
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -207,7 +214,13 @@ body {
 }
 
 .form-fied {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+}
+
+@media screen and (min-width: 1200px) {
+  .form-fied {
+    margin-bottom: 20px;
+  }
 }
 
 .form-fied-text {
@@ -220,7 +233,7 @@ body {
 }
 
 .form-input {
-  width: 448px;
+  width: 370px;
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -237,8 +250,15 @@ body {
   fill: var(--blue);
 }
 
+@media screen and (min-width: 1200px) {
+  .form-input {
+    width: 448px;
+    height: 40px;
+  }
+}
+
 .form-text {
-  width: 448px;
+  width: 370px;
   height: 120px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -252,6 +272,13 @@ body {
   line-height: calc(14 / 12);
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
+}
+
+@media screen and (min-width: 1200px) {
+  .form-text {
+    width: 448px;
+    height: 120px;
+  }
 }
 
 .form-icon {
@@ -268,21 +295,35 @@ body {
 
 .check-text {
   display: flex;
-  font-size: 14px;
-  line-height: calc(24 / 14);
+  font-size: 12px;
+  line-height: calc(14 / 12);
   letter-spacing: 0.03em;
   color: var(--grey);
   margin-bottom: 30px;
 }
 
+@media screen and (min-width: 1200px) {
+  .check-text {
+    font-size: 14px;
+    line-height: calc(24 / 14);
+  }
+}
+
 .check-text-link {
   display: flex;
+  font-size: 12px;
+  line-height: calc(14 / 12);
   margin-left: 5px;
-  font-size: 14px;
-  line-height: calc(24 / 14);
   letter-spacing: 0.03em;
   color: var(--blue);
   text-decoration: underline;
+}
+
+@media screen and (min-width: 1200px) {
+  .check-text-link {
+    font-size: 14px;
+    line-height: calc(24 / 14);
+  }
 }
 
 .check-item {
@@ -613,6 +654,10 @@ body {
   padding: 10px 0;
   display: block;
   margin-bottom: 21px;
+}
+
+.mob__menu--link.nave {
+  color: var(--blue);
 }
 
 .mob__menu--list {
