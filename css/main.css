@@ -379,6 +379,7 @@ body {
 
 .header__container {
   display: flex;
+  width: 100%;
 }
 
 .header__logo {
@@ -404,6 +405,7 @@ body {
     line-height: calc(31 / 26);
     margin-right: 93px;
     padding: 25px 0;
+    max-width: 1200px;
   }
 }
 
@@ -589,7 +591,9 @@ body {
 
 .header__btn {
   display: flex;
-  margin-left: 270px;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
   border: none;
   cursor: pointer;
   background-color: transparent;
@@ -624,6 +628,7 @@ body {
 }
 
 .mob__menu {
+  z-index: 99;
   position: absolute;
   background-color: var(--white);
   right: 0;
@@ -837,10 +842,6 @@ body {
   .priorities:nth-last-child(-n + 2) {
     margin-bottom: 0;
   }
-}
-
-.priorities {
-  width: 450px;
 }
 
 @media screen and (min-width: 768px) {
@@ -1303,7 +1304,7 @@ body {
 
 .footer-form-input {
   padding: 15px;
-  width: 450px;
+  width: 100%;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));

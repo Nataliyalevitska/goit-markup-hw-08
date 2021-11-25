@@ -2,6 +2,7 @@
   border: 1px solid var(--middle-white);
   &__container {
     display: flex;
+    width: 100%;
   }
   &__logo {
     font-size: 24px;
@@ -20,6 +21,7 @@
       line-height: calc(31 / 26);
       margin-right: 93px;
       padding: 25px 0;
+      max-width: 1200px;
     }
   }
   &__nave {
@@ -170,7 +172,9 @@
 }
 .header__btn {
   display: flex;
-  margin-left: 270px;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
   border: none;
   cursor: pointer;
   background-color: transparent;
@@ -197,6 +201,7 @@
   }
 }
 .mob__menu {
+  z-index: 99;
   position: absolute;
   background-color: var(--white);
   right: 0;
