@@ -149,10 +149,12 @@ body {
 }
 
 .backdrop {
-  position: absolute;
+  z-index: 99;
+  position: fixed;
   width: 100%;
   height: 100%;
   top: 0;
+  left: o;
   background-color: rgba(0, 0, 0, 0.2);
 }
 
@@ -374,6 +376,7 @@ body {
 }
 
 .header {
+  max-width: 100%;
   border: 1px solid var(--middle-white);
 }
 
@@ -628,14 +631,13 @@ body {
 }
 
 .mob__menu {
-  z-index: 99;
   position: absolute;
   background-color: var(--white);
   right: 0;
   top: 0;
   width: 100vw;
   height: 100vh;
-  padding: 48px 83px 48px 40px;
+  padding: 48px 21px 48px 40px;
   overflow: scroll;
 }
 
@@ -699,7 +701,7 @@ body {
 
 .mob__menu--socialnetwork {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .mob__menu--social {
@@ -717,15 +719,17 @@ body {
 
 .mob__menu--after::after {
   content: "";
-  position: absolute;
   width: 22px;
   height: 0;
   border: 1px solid rgba(33, 33, 33, 0.2);
   transform: rotate(90deg);
   bottom: 65px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .hero {
+  max-width: 100%;
   min-height: 400px;
   text-align: center;
   padding: 118px 0;
@@ -1077,29 +1081,22 @@ body {
   .brand-title {
     font-size: 36px;
     line-height: calc(42 / 36);
+    margin-bottom: 50px;
   }
 }
 
 .brand-logo-ticket {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-@media screen and (min-width: 1200px) {
-  .brand-logo-ticket {
-    display: flex;
-    justify-content: space-between;
-  }
+  margin-left: -30px;
 }
 
 .brand-logo-icon {
-  width: 210px;
+  width: 100%;
   height: 92px;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 30px;
   border: 2px solid var(--middle-grey);
   border-radius: 4px;
   fill: var(--middle-grey);
@@ -1114,18 +1111,22 @@ body {
   fill: var(--blue);
 }
 
+.brand-logo-item {
+  margin-left: 30px;
+  margin-top: 30px;
+  flex-basis: calc(100% / 2 - 30px);
+}
+
 @media screen and (min-width: 768px) {
-  .brand-logo-icon {
-    width: 226px;
-    flex-basis: calc((100% - 15px * 3) / 3);
+  .brand-logo-item {
+    flex-basis: calc(100% / 3 - 30px);
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .brand-logo-icon {
-    width: 170px;
-    margin-top: 50px;
-    flex-basis: calc((100% - 15px * 6) / 6);
+  .brand-logo-item {
+    flex-basis: calc(100% / 6 - 30px);
+    margin-top: 0;
   }
 }
 
@@ -1375,7 +1376,7 @@ body {
 }
 
 .card {
-  width: 450px;
+  max-width: 100%;
   margin-bottom: 30px;
   border: 1px solid var(--card-border);
   transition-property: box-shadow;

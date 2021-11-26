@@ -1,4 +1,5 @@
 .header {
+  max-width: 100%;
   border: 1px solid var(--middle-white);
   &__container {
     display: flex;
@@ -201,14 +202,14 @@
   }
 }
 .mob__menu {
-  z-index: 99;
+  //z-index: 99;
   position: absolute;
   background-color: var(--white);
   right: 0;
   top: 0;
   width: 100vw;
   height: 100vh;
-  padding: 48px 83px 48px 40px;
+  padding: 48px 21px 48px 40px;
   overflow: scroll;
   @media screen and (min-width: 768px) {
     display: none;
@@ -262,7 +263,8 @@
 }
 .mob__menu--socialnetwork {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  //justify-content: space-between;
 }
 .mob__menu--social {
   font-weight: 500;
@@ -279,10 +281,12 @@
 }
 .mob__menu--after::after {
   content: "";
-  position: absolute;
+  //position: absolute;
   width: 22px;
   height: 0;
   border: 1px solid rgba(33, 33, 33, 0.2);
   transform: rotate(90deg);
   bottom: 65px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
